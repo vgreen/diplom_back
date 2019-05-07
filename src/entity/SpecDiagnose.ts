@@ -3,7 +3,7 @@ import { User } from "./User";
 import { Visit } from "./Visit";
 
 @Entity()
-export class MainDiagnose {
+export class SpecDiagnose {
 
     @PrimaryGeneratedColumn()
     id: number;
