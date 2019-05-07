@@ -26,6 +26,6 @@ export const data = {
         value: 'string',
         code: 'string',
         date: 123,
-        author: '4',
+        author: 24,
     }
 }
