@@ -1,24 +1,67 @@
-{
-   "type": "postgres",
-   "host": "localhost",
-   "port": 5432,
-   "username": "vlad",
-   "password": "geil2012",
-   "database": "diplom",
-   "synchronize": true,
-   "logging": false,
-   "entities": [
-      "src/entity/**/*.ts"
-   ],
-   "migrations": [
-      "src/migration/**/*.ts"
-   ],
-   "subscribers": [
-      "src/subscriber/**/*.ts"
-   ],
-   "cli": {
-      "entitiesDir": "src/entity",
-      "migrationsDir": "src/migration",
-      "subscribersDir": "src/subscriber"
-   }
-}
+[
+  {
+    "name": "mgerm_users_connect",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "mysqladmin",
+    "database": "mgerm_users",
+    "synchronize": true,
+    "entities": [
+      "./src/entities/mgerm_users/*.ts"
+    ]
+  },
+  {
+    "name": "vmh_db_connect",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "mysqladmin",
+    "database": "vmh_db",
+    "synchronize": true,
+    "entities": [
+      "./src/entities/vmh_db/*.ts"
+    ]
+  },
+  {
+    "name": "mgerm_connect",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "mysqladmin",
+    "database": "mgerm",
+    "synchronize": true,
+    "entities": [
+      "./src/entities/mgerm/*.ts"
+    ]
+  },
+  {
+    "name": "mgerm_archive_connect",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "mysqladmin",
+    "database": "mgerm_archive",
+    "synchronize": true,
+    "entities": [
+      "./src/entities/mgerm_archive/*.ts"
+    ]
+  },
+  {
+    "name": "spec_connect",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "mysqladmin",
+    "database": "spec_db",
+    "synchronize": true,
+    "entities": [
+      "./src/entities/spec_db/*.ts"
+    ]
+  }
+]

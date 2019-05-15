@@ -1,5 +1,5 @@
 import {getRepository} from "typeorm";
-import {User, SpecDiagnose, MainDiagnose, Statistic, Visit, Income, Patient} from "../entity";
+import {User, SpecDiagnose, MainDiagnose, Statistic, Visit, Income, Patient} from "../entities/spec_db";
 
 
 export const connectMainDiagnose = async() => {

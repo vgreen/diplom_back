@@ -1,7 +1,7 @@
 import {getConnection} from "typeorm";
 import {users} from "../data/users";
 import {stat} from "../data/stat"
-import {Patient, Statistic, User} from "../entity";
+import {Patient, Statistic, User} from "../entities/spec_db";
 import {patients} from "../data/patients";
 
 export const setNewBasicField = async( Entity:Function , Params:any) => {

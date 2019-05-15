@@ -2,18 +2,114 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ff64b6-df4b-406f-9c03-d82ca0983db1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/patients.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/stat.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/users.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/change_hystory_number_log.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/department_all_patients_list.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/department_income.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/department_movements.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/department_outcome.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/department_planes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/department_planes_copy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/department_statistics.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/epm_records.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/files.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/patients_departments.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/patients_list.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/patients_list_correction.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/record_correction_log.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/scales.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/smart_search.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/stat_cards_table.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm/unlock_log.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_archive/epm_records.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_archive/gabage_records.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/administration_log.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/auth_log.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/classes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/departments.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/directors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/guides.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/in_log.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/rooms.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/schedule.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/seccure_log.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/specialisation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/sql_errors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/system_changes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/system_globals.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/users.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/users_change_log_actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/mgerm_users/users_changes_log.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/10_spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/1_personal_info.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/2_zhaloby.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/3_ana_vitae.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/4_ana_morbi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/5_som_state.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/6_neurol_state.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/7_psych_state.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/8_diagnoses.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/9_treatment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/ad_mesure.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/an_biochem_blood.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/an_blood_com.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/an_blood_infections.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/an_hormones.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/an_uro_com.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/audio_i_video_materiali.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/default.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/dopolnitelnie_statisticheskie_dannie.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/echo_cardio_graphia.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/elektromiografiya.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/emg_dvigatelnih_nervov_verhnih_konechnostey.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/glu_profile.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/holterovskoe_monitorirovanie.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/immunochemiolum_access.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/immunofermentniy_analiz_(at_k_gonadoliberinu).ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/instr_ecg.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/instr_eeg.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/instr_mecho.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/instr_reg.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/instr_uzi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/instrumental.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/inv_immunolog.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/inv_protrombin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/lenar.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/medical_certificates.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/medical_refferals.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/medication.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/micro_ginecology.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/neurophys_research.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/osmotr_otonevrologa.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/osmotr_psihoterapevta.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/osmotr_tsefalgologa.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/otsenka_psihologicheskogo_sostoyaniya_bolnogo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/perevod_v_drugoy_statsionar.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/records.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/relaksatsionnaya_alfa_kapsula.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/sisters_diary.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/statisticheskaya_karta.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/sutochniy_analiz_mochi_na_mao.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/treat_vacations.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/uchet_suitsidalnih_misley.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/vich_gepatiti_i_sifilis.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/vmh_db/visit_kpo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/has-ansi/node_modules/ansi-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/has-ansi/node_modules/ansi-regex/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/yargonaut/node_modules/ansi-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/yargonaut/node_modules/ansi-regex/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/yargonaut/node_modules/strip-ansi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/yargonaut/node_modules/strip-ansi/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ormconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ormconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/Setter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Setter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/User.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/entityConnections.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/entityConnections.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Income.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/spec_db/Income.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/MainDiagnose.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/spec_db/MainDiagnose.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Patient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/spec_db/Patient.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/SpecDiagnose.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/spec_db/SpecDiagnose.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Statistic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/spec_db/Statistic.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/spec_db/User.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Visit.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/spec_db/Visit.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/spec_db/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +125,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="269" />
+            <state relative-caret-position="272">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="269" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/migration/data.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entities/spec_db/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entities/spec_db/Income.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-106">
+              <folding>
+                <element signature="e#0#119#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ormconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="976">
+              <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -47,11 +179,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/Setter.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+            <state relative-caret-position="944">
+              <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -60,7 +192,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entity/Statistic.ts">
+        <entry file="file://$PROJECT_DIR$/src/entities/spec_db/Statistic.ts">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -88,6 +220,7 @@
         <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/src/data/stat.ts" />
         <option value="$PROJECT_DIR$/src/controllers/Setter.ts" />
+        <option value="$PROJECT_DIR$/ormconfig.json" />
       </list>
     </option>
   </component>
@@ -120,19 +253,7 @@
               <item name="diplom_back" type="b2602c69:ProjectViewProjectNode" />
               <item name="diplom_back" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="diplom_back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diplom_back" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="diplom_back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diplom_back" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -143,7 +264,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/entities/mgerm" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -160,6 +281,18 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/entities/mgerm" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/entities/mgerm_archive" />
+      <recent name="$PROJECT_DIR$/src/entities/mgerm_users" />
+      <recent name="$PROJECT_DIR$/src/entities/mgerm" />
+      <recent name="$PROJECT_DIR$/src/entities/vmh_db" />
+      <recent name="$PROJECT_DIR$/src/entities/spec_db" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -186,17 +319,27 @@
       <workItem from="1557243180309" duration="1746000" />
       <workItem from="1557244946140" duration="330000" />
       <workItem from="1557430154001" duration="3511000" />
+      <workItem from="1557763945765" duration="317000" />
+      <workItem from="1557841871811" duration="1145000" />
+      <workItem from="1557911483566" duration="2816000" />
     </task>
+    <task id="LOCAL-00001" summary="so sad">
+      <created>1557763996716</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557763996716</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5587000" />
+    <option name="totallyTimeSpent" value="9865000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.136716" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3883016" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -208,10 +351,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.213253" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.20361446" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -241,6 +384,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="so sad" />
+    <option name="LAST_COMMIT_MESSAGE" value="so sad" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/controllers/Interfaces.ts">
       <provider selected="true" editor-type-id="text-editor" />
@@ -261,14 +408,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/User.ts">
+    <entry file="file://$PROJECT_DIR$/src/entities/spec_db/User.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Patient.ts">
+    <entry file="file://$PROJECT_DIR$/src/entities/spec_db/Patient.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
@@ -278,23 +425,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/stat.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23170">
-          <caret line="54851" selection-start-line="54851" selection-end-line="54851" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="269" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/stat.txt" />
     <entry file="file://$PROJECT_DIR$/src/data/patients.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17296">
@@ -302,8 +433,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Statistic.ts">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/vmh_db/3_ana_vitae.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/vmh_db/4_ana_morbi.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/vmh_db/an_uro_com.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-798" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/vmh_db/treat_vacations.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="269" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/stat.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -314,11 +473,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/Setter.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+        <state relative-caret-position="944">
+          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/spec_db/Statistic.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/migration/data.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/spec_db/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/mgerm/epm_records.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/spec_db/Income.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <folding>
+            <element signature="e#0#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/ormconfig.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ormconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="976">
+          <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
         </state>
       </provider>
     </entry>

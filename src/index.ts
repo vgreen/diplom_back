@@ -1,6 +1,6 @@
 import "reflect-metadata";
 import {createConnection, getRepository} from "typeorm";
-import {User, SpecDiagnose, MainDiagnose, Statistic, Visit, Income, Patient} from "./entity";
+import {User, SpecDiagnose, MainDiagnose, Statistic, Visit, Income, Patient} from "./entities/spec_db";
 import {Request, Response} from "express";
 import * as express from "express";
 import {setNewBasicField, setPatients, setUsers} from "./controllers/Setter";
