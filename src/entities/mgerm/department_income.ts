@@ -6,6 +6,9 @@ import {BaseEntity,Column,Entity,Index,JoinColumn,JoinTable,ManyToMany,ManyToOne
 @Index("patientID",["patientID",])
 export class department_income {
 
+    @PrimaryGeneratedColumn()
+    id: number;
+
     @Column("char",{ 
         nullable:true,
         length:50,

@@ -4,7 +4,7 @@ import {BaseEntity,Column,Entity,Index,JoinColumn,JoinTable,ManyToMany,ManyToOne
 @Entity("1_personal_info",{schema:"vmh_db" } )
 @Index("department",["department",])
 @Index("out_date",["out_date",])
-export class 1_personal_info {
+export class s1_personal_info {
 
     @PrimaryGeneratedColumn({
         type:"bigint", 
@@ -344,7 +344,7 @@ export class 1_personal_info {
         default: () => "'4'",
         name:"Obrazovanie_(dlitelnost)"
         })
-    Obrazovanie_(dlitelnost):number | null;
+    Obrazovanie:number | null;
         
 
     @Column("int",{ 

@@ -7,6 +7,9 @@ import {BaseEntity,Column,Entity,Index,JoinColumn,JoinTable,ManyToMany,ManyToOne
 @Index("department",["department",])
 export class department_all_patients_list {
 
+    @PrimaryGeneratedColumn()
+    id: number;
+
     @Column("date",{ 
         nullable:true,
         name:"date"

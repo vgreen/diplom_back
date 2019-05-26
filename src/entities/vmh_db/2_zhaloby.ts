@@ -3,7 +3,7 @@ import {BaseEntity,Column,Entity,Index,JoinColumn,JoinTable,ManyToMany,ManyToOne
 
 @Entity("2_zhaloby",{schema:"vmh_db" } )
 @Index("NewIndex",["number",])
-export class 2_zhaloby {
+export class s2_zhaloby {
 
     @Column("int",{ 
         nullable:true,

@@ -7,7 +7,7 @@ import {BaseEntity,Column,Entity,Index,JoinColumn,JoinTable,ManyToMany,ManyToOne
 @Index("hystoryNumber",["hystoryNumber",])
 @Index("recordTypeID",["recordTypeID",])
 @Index("linked_record",["linked_record",])
-export class epm_records {
+export class arc_epm_records {
 
     @Column("bigint",{ 
         nullable:true,

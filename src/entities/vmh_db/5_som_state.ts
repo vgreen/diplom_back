@@ -2,7 +2,7 @@ import {BaseEntity,Column,Entity,Index,JoinColumn,JoinTable,ManyToMany,ManyToOne
 
 
 @Entity("5_som_state",{schema:"vmh_db" } )
-export class 5_som_state {
+export class s5_som_state {
 
     @PrimaryGeneratedColumn({
         type:"bigint", 

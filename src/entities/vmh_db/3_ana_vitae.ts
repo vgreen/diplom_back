@@ -3,7 +3,7 @@ import {BaseEntity,Column,Entity,Index,JoinColumn,JoinTable,ManyToMany,ManyToOne
 
 @Entity("3_ana_vitae",{schema:"vmh_db" } )
 @Index("NewIndex",["number",])
-export class 3_ana_vitae {
+export class s3_ana_vitae {
 
     @PrimaryGeneratedColumn({
         type:"bigint", 
@@ -264,14 +264,7 @@ export class 3_ana_vitae {
         nullable:true,
         name:"Obrazovanie_(napravlenie)"
         })
-    Obrazovanie_(napravlenie):number | null;
-        
-
-    @Column("int",{ 
-        nullable:true,
-        name:"Obrazovanie_(dlitelnost)"
-        })
-    Obrazovanie_(dlitelnost):number | null;
+    Obrazovanie:number | null;
         
 
     @Column("int",{ 

@@ -15,10 +15,16 @@ export class Income {
     patient: Patient;
 
     @Column()
-    inDate: number;
+    inDate: string;
 
     @Column()
-    outDate: number;
+    outDate: string;
+
+    @Column("int",{
+        nullable:false,
+        name:"hystoryNumber"
+    })
+    hystoryNumber:number;
 
     @OneToOne( type => MainDiagnose )
     @JoinColumn()
@@ -37,4 +43,19 @@ export class Income {
     
     @OneToMany( type => Visit , visit => visit.income)
     visits: Visit[]
+
+    @Column({
+        nullable:true,
+    })
+    education: string;
+
+    @Column({
+        nullable:true,
+    })
+    socStatus: string;
+
+    @Column({
+        nullable:true,
+    })
+    work: string;
 }

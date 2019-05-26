@@ -29,7 +29,7 @@ export class dopolnitelnie_statisticheskie_dannie {
         nullable:true,
         name:"Dlitelnost_zabolevaniya_(let)"
         })
-    Dlitelnost_zabolevaniya_(let):number | null;
+    Dlitelnost_zabolevaniya:number | null;
         
 
     @Column("float",{ 
@@ -71,14 +71,14 @@ export class dopolnitelnie_statisticheskie_dannie {
         nullable:true,
         name:"Prinimal_nootropi,_vitamini,_sosudistie_preparati"
         })
-    Prinimal_nootropi,_vitamini,_sosudistie_preparati:number | null;
+    Prinimal_nootropi:number | null;
         
 
     @Column("tinyint",{ 
         nullable:true,
         name:"Prinimal__trankvilizatori,_anksiolitiki,_gipnotiki"
         })
-    Prinimal__trankvilizatori,_anksiolitiki,_gipnotiki:number | null;
+    Prinimal__trankvilizatori:number | null;
         
 
     @Column("tinyint",{ 
@@ -99,7 +99,7 @@ export class dopolnitelnie_statisticheskie_dannie {
         nullable:true,
         name:"Obrazovanie_(dlitelnost)"
         })
-    Obrazovanie_(dlitelnost):number | null;
+    Obrazovanie:number | null;
         
 
     @Column("int",{ 

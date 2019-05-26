@@ -3,7 +3,7 @@ import {BaseEntity,Column,Entity,Index,JoinColumn,JoinTable,ManyToMany,ManyToOne
 
 @Entity("8_diagnoses",{schema:"vmh_db" } )
 @Index("NewIndex",["number",])
-export class 8_diagnoses {
+export class s8_diagnoses {
 
     @PrimaryGeneratedColumn({
         type:"bigint", 

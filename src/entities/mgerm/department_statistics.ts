@@ -5,6 +5,9 @@ import {BaseEntity,Column,Entity,Index,JoinColumn,JoinTable,ManyToMany,ManyToOne
 @Index("date_department_sx",["date","department","sx",],{unique:true})
 export class department_statistics {
 
+    @PrimaryGeneratedColumn()
+    id: number;
+
     @Column("date",{ 
         nullable:true,
         name:"date"

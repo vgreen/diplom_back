@@ -7,8 +7,13 @@ export class Patient {
     @PrimaryGeneratedColumn()
     id: number;
 
+    @Column("mediumint",{
+        nullable:true,
+    })
+    oldPatientID:number | null;
+
     @Column()
-    firstName: string;
+    firstName:string;
 
     @Column()
     secondName: string;
@@ -20,9 +25,11 @@ export class Patient {
     age: number;
 
     @Column()
-    birthday: number;
+    birthday: string;
 
-    @Column()
+    @Column({
+        nullable:true,
+    })
     type: string;
 
     @OneToMany(type => Income, income => income.patient)
@@ -31,19 +38,9 @@ export class Patient {
     @OneToOne( type => Income )
     currentIncome: Income;
 
-    @Column()
+    @Column({
+        nullable:true,
+    })
     region: string;
-
-    @Column()
-    education: string;
-
-    @Column()
-    socStatus: string;
-
-    @Column()
-    work: string;
-
-    @Column()
-    incorrect: boolean;
 
 }

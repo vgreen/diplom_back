@@ -3,7 +3,7 @@ import {BaseEntity,Column,Entity,Index,JoinColumn,JoinTable,ManyToMany,ManyToOne
 
 @Entity("6_neurol_state",{schema:"vmh_db" } )
 @Index("NewIndex",["number",])
-export class 6_neurol_state {
+export class s6_neurol_state {
 
     @PrimaryGeneratedColumn({
         type:"bigint", 
