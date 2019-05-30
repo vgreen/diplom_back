@@ -2,109 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ff64b6-df4b-406f-9c03-d82ca0983db1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/ageStatistic.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/connections.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/standart_queries/ageStatisticQuery.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/Changelog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-codec.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-codec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Setter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Setter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/patients.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/stat.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/users.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm/department_all_patients_list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/mgerm/department_all_patients_list.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm/department_income.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/mgerm/department_income.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm/department_movements.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm/department_planes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm/department_planes_copy.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm/department_statistics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/mgerm/department_statistics.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm/files.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm/patients_departments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/mgerm/patients_departments.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm/patients_list_correction.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm/record_correction_log.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm/scales.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm/smart_search.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm/unlock_log.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_archive/epm_records.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/mgerm_archive/arc_epm_records.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_archive/gabage_records.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/administration_log.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/auth_log.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/classes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/directors.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/guides.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/in_log.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/rooms.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/schedule.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/seccure_log.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/specialisation.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/sql_errors.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/system_changes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/system_globals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/users_change_log_actions.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mgerm_users/users_changes_log.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/spec_db/Income.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/spec_db/Income.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/spec_db/Patient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/spec_db/Patient.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/10_spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/vmh_db/10_spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/1_personal_info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/vmh_db/1_personal_info.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/2_zhaloby.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/vmh_db/2_zhaloby.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/3_ana_vitae.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/vmh_db/3_ana_vitae.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/4_ana_morbi.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/5_som_state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/vmh_db/5_som_state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/6_neurol_state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/vmh_db/6_neurol_state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/7_psych_state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/vmh_db/7_psych_state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/8_diagnoses.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/vmh_db/8_diagnoses.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/9_treatment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/vmh_db/9_treatment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/ad_mesure.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/an_biochem_blood.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/an_blood_com.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/an_blood_infections.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/an_hormones.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/an_uro_com.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/audio_i_video_materiali.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/default.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/dopolnitelnie_statisticheskie_dannie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/vmh_db/dopolnitelnie_statisticheskie_dannie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/echo_cardio_graphia.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/elektromiografiya.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/emg_dvigatelnih_nervov_verhnih_konechnostey.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/glu_profile.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/holterovskoe_monitorirovanie.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/immunochemiolum_access.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/immunofermentniy_analiz_(at_k_gonadoliberinu).ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/instr_ecg.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/instr_eeg.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/instr_mecho.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/instr_reg.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/instr_uzi.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/instrumental.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/inv_immunolog.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/inv_protrombin.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/lenar.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/medical_certificates.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/medical_refferals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/medication.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/micro_ginecology.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/neurophys_research.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/osmotr_otonevrologa.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/osmotr_psihoterapevta.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/osmotr_tsefalgologa.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/perevod_v_drugoy_statsionar.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/records.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/relaksatsionnaya_alfa_kapsula.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/sisters_diary.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/statisticheskaya_karta.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/sutochniy_analiz_mochi_na_mao.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/treat_vacations.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/uchet_suitsidalnih_misley.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/vich_gepatiti_i_sifilis.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/vmh_db/visit_kpo.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/ageStatistic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ageStatistic.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migration/data.ts" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -120,15 +21,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="32">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/migration/data.ts">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/utils/standart_queries/ageStatisticQuery.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="535">
+              <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -140,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/ageStatistic.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="267">
+              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -152,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controllers/index.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="16">
@@ -238,16 +143,15 @@
         <option value="$PROJECT_DIR$/src/utils/standart_queries/ageStatisticQuery.ts" />
         <option value="$PROJECT_DIR$/src/controllers/Setter.ts" />
         <option value="$PROJECT_DIR$/src/controllers/index.ts" />
-        <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/src/controllers/ageStatistic.ts" />
+        <option value="$PROJECT_DIR$/src/index.ts" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="79" />
-    <option name="y" value="25" />
-    <option name="width" value="1841" />
-    <option name="height" value="1055" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -277,7 +181,13 @@
               <item name="diplom_back" type="b2602c69:ProjectViewProjectNode" />
               <item name="diplom_back" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="migration" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diplom_back" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diplom_back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -350,7 +260,7 @@
       <workItem from="1558104563631" duration="19913000" />
       <workItem from="1558425123388" duration="791000" />
       <workItem from="1558703630083" duration="10309000" />
-      <workItem from="1558827474070" duration="4713000" />
+      <workItem from="1558827474070" duration="7457000" />
     </task>
     <task id="LOCAL-00001" summary="so sad">
       <created>1557763996716</created>
@@ -373,15 +283,21 @@
       <option name="project" value="LOCAL" />
       <updated>1558205319350</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="age statistic works!!!!">
+      <created>1558912669125</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558912669125</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45868000" />
+    <option name="totallyTimeSpent" value="48612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17829457" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -395,10 +311,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.14698794" />
-      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.14337349" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28674698" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.28674698" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -430,7 +346,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="so sad" />
-    <option name="LAST_COMMIT_MESSAGE" value="so sad" />
+    <MESSAGE value="age statistic works!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="age statistic works!!!!" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/controllers/Interfaces.ts">
@@ -633,24 +550,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/standart_queries/ageStatisticQuery.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/migration/data.ts">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/entityConnections.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ormconfig.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -666,6 +567,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/entityConnections.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/standart_queries/ageStatisticQuery.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/connections.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -673,27 +597,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/ageStatistic.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/ageStatistic.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

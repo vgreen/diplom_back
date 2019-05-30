@@ -7,15 +7,11 @@ export const ageStatisticRouter = Router();
 ageStatisticRouter.use("/", ageStatisticRequest);
 
 async function ageStatisticRequest(request: Request, response: Response) {
-    let params: string[],
-        ageStatistic: any;
+    let ageStatistic: any;
     try {
-        params = await request.body;
-        console.log(params);
-
-            ageStatistic = await getAgeStatistic('', '', '');
-
-            response.send(ageStatistic)
+        ageStatistic = await getAgeStatistic(request.body.dateStart, request.body.dateEnd, request.body.dep);
+        console.log(request.body);
+        response.send(ageStatistic)
 
     } catch (error) {
         response.status(400).send(error.message);
@@ -24,7 +20,9 @@ async function ageStatisticRequest(request: Request, response: Response) {
 }
 
 export const getAgeStatistic = async (dateStart: string, dateEnd: string, department?: string) => {
-    let dep: string = (department) ? ("and department  = " + department) : '';
+    let dep: string = (department) ? ("and di.department  = '" + department + "'\n ") : '',
+        dateS:string = dateStart.toString() ,
+        dateE:string = dateEnd.toString();
     try {
         return await getConnection("mgerm_connect")
             .query("SELECT di.department, count(CASE\n" +
@@ -84,7 +82,7 @@ export const getAgeStatistic = async (dateStart: string, dateEnd: string, depart
                 "    ELSE NULL\n" +
                 "END) as '75+' \n" +
                 "FROM mgerm.department_income as di\n" +
-                "where di.date >= '2015-01-01' and di.date < '2016-01-01' " + dep +
+                "where di.date >= '"+ dateS +"' and di.date < '" + dateE + "' " + dep +
                 "group by department\n");
 
     } catch (error) {
