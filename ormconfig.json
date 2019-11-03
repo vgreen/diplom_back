@@ -5,7 +5,7 @@
     "host": "localhost",
     "port": 3306,
     "username": "root",
-    "password": "mysqladmin",
+    "password": "root",
     "database": "mgerm_users",
     "synchronize": true,
     "entities": [
@@ -18,7 +18,7 @@
     "host": "localhost",
     "port": 3306,
     "username": "root",
-    "password": "mysqladmin",
+    "password": "root",
     "database": "vmh_db",
     "synchronize": true,
     "entities": [
@@ -31,7 +31,7 @@
     "host": "localhost",
     "port": 3306,
     "username": "root",
-    "password": "mysqladmin",
+    "password": "root",
     "database": "mgerm",
     "synchronize": true,
     "entities": [
@@ -44,24 +44,11 @@
     "host": "localhost",
     "port": 3306,
     "username": "root",
-    "password": "mysqladmin",
+    "password": "root",
     "database": "mgerm_archive",
     "synchronize": true,
     "entities": [
       "./src/entities/mgerm_archive/*.ts"
-    ]
-  },
-  {
-    "name": "spec_connect",
-    "type": "mysql",
-    "host": "localhost",
-    "port": 3306,
-    "username": "root",
-    "password": "mysqladmin",
-    "database": "spec_db",
-    "synchronize": true,
-    "entities": [
-      "./src/entities/spec_db/*.ts"
     ]
   }
 ]
