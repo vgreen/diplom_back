@@ -25,65 +25,55 @@ export const getGenderStatistic = async (dateStart: string, dateEnd: string, dep
         dateE:string = dateEnd.toString();
     try {
         return await getConnection("mgerm_connect")
-            .query("SELECT di.department, count(CASE\n" +
-                "    WHEN di.age < 18 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as 'under18' ,\n" +
-                "count(CASE\n" +
-                "    WHEN di.age >= 18 and di.age < 22 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as '18-21' ,\n" +
-                "count(CASE\n" +
-                "    WHEN di.age >= 22 and di.age < 25 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as '22-24' ,\n" +
-                "count(CASE\n" +
-                "    WHEN di.age >= 25 and di.age < 30 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as '25-29' ,\n" +
-                "count(CASE\n" +
-                "    WHEN di.age >= 30 and di.age < 35 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as '30-34' ,\n" +
-                "count(CASE\n" +
-                "    WHEN di.age >= 35 and di.age < 40 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as '35-39' ,\n" +
-                "count(CASE\n" +
-                "    WHEN di.age >= 40 and di.age < 45 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as '40-44' ,\n" +
-                "count(CASE\n" +
-                "    WHEN di.age >= 45 and di.age < 50 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as '45-49' ,\n" +
-                "count(CASE\n" +
-                "    WHEN di.age >= 50 and di.age < 55 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as '50-54' ,\n" +
-                "count(CASE\n" +
-                "    WHEN di.age >= 55 and di.age < 60 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as '55-59' ,\n" +
-                "count(CASE\n" +
-                "    WHEN di.age >= 60 and di.age < 65 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as '60-64' ,\n" +
-                "count(CASE\n" +
-                "    WHEN di.age >= 65 and di.age < 70 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as '65-69' ,\n" +
-                "count(CASE\n" +
-                "    WHEN di.age >= 70 and di.age < 75 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as '70-74' ,\n" +
-                "count(CASE\n" +
-                "    WHEN di.age >75 THEN 1\n" +
-                "    ELSE NULL\n" +
-                "END) as '75+' \n" +
-                "FROM mgerm.department_income as di\n" +
-                "where di.date >= '"+ dateS +"' and di.date < '" + dateE + "' " + dep +
-                "group by department\n");
+            .query(
+                "select (CASE " +
+                "when t.sx = 0 then 'Мужской'"+
+                "else 'Женский' "+
+                "end) "+
+                 "as 'пол' ,"+
+             "count(CASE "+
+                 "when t.department = '1' then 1 "+
+                 'else 0 '+
+                 "end) as '1 отделение',"+
+             "count(CASE "+
+                 "when t.department = '2' then 1 "+
+                 "else 0 "+
+                 "end) as '2 отделение',"+
+             "count(CASE "+
+                 "when t.department = '3' then 1 "+
+                 'else 0 '+
+                 "end) as '3 отделение',"+
+             "count(CASE "+
+                 "when t.department = '4' then 1 "+
+                 "else 0 "+
+                 "end) as '4 отделение',"+
+             "count(CASE "+
+                 "when t.department = '5' then 1 "+
+                 'else 0 '+
+                 "end) as '5 отделение',"+
+             "count(CASE "+
+                 "when t.department = '6' then 1 "+
+                 "else 0 "+
+                 "end) as '6 отделение',"+
+             "count(CASE "+
+                 "when t.department = '7' then 1 "+
+                 'else 0 '+
+                 "end) as '7 отделение',"+
+             "count(CASE "+
+                 "when t.department = '8' then 1 "+
+                 "else 0 "+
+                 "end) as '8 отделение',"+
+             "count(CASE "+
+                    "when t.department = '9' then 1 "+
+                    'else 0 '+
+                    "end) as '9 отделение',"+
+             "count(CASE "+
+                    "when t.department = '10' then 1 "+
+                    "else 0 "+
+                    "end) as '10 отделение' "+
+                "from mgerm.department_income as t "+
+                "where t.date >= '"+ dateS +"' and t.date < '" + dateE + "' " +
+                "group by t.sx\n");
 
     } catch (error) {
         console.log(error.message);
