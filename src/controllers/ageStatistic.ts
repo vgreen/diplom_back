@@ -21,7 +21,7 @@ async function ageStatisticRequest(request: Request, response: Response) {
 }
 
 export const getAgeStatistic = async (dateStart: string, dateEnd: string, department?: string) => {
-    let dep: string = (department) ? ("and di.department  = '" + department + "'\n ") : '',
+    let dep: string = (department) ? ("and t1.department  = '" + department + "'\n ") : '',
         dateS:string = dateStart.toString() ,
         dateE:string = dateEnd.toString();
     try {
@@ -50,7 +50,7 @@ export const getAgeStatistic = async (dateStart: string, dateEnd: string, depart
                 "\t\t\tt1.age,\n" +
                 "\t\t\tIF(t1.department='Дн. ст.','Дн. ст.',concat(t1.department)) as department\n" +
                 "\t\tFROM mgerm.department_income as t1\n" +
-                "\t\tWHERE t1.date >= '"+ dateStart +"' and t1.date <'"+dateEnd+"'\n" +
+                "\t\tWHERE t1.date >= '"+ dateS +"' and t1.date <'"+dateE+"'\n" +
                 dep +
                 "\t\t) as tabl1\n" +
                 "\t\tGROUP BY department\n" +

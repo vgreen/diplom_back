@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12ff64b6-df4b-406f-9c03-d82ca0983db1" name="Default Changelist" comment="age statistic works!!!!">
-      <change afterPath="$PROJECT_DIR$/src/queries/ageQuery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="12ff64b6-df4b-406f-9c03-d82ca0983db1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ormconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ormconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/ageStatistic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ageStatistic.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,12 +23,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1TBTqUMYr6FutRoXn3KHAqgtIER" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TypeScript" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../diplom_front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -50,15 +49,15 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/entities/mgerm" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/entities/mgerm_archive" />
       <recent name="$PROJECT_DIR$/src/entities/mgerm_users" />
       <recent name="$PROJECT_DIR$/src/entities/mgerm" />
       <recent name="$PROJECT_DIR$/src/entities/vmh_db" />
-      <recent name="$PROJECT_DIR$/src/entities/spec_db" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/entities/mgerm" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -105,7 +104,11 @@
       <workItem from="1560861189589" duration="265000" />
       <workItem from="1561924884291" duration="502000" />
       <workItem from="1563886180223" duration="138000" />
-      <workItem from="1572774848537" duration="2481000" />
+      <workItem from="1572774848537" duration="3749000" />
+      <workItem from="1572932684472" duration="17000" />
+      <workItem from="1572932883185" duration="101000" />
+      <workItem from="1573571122059" duration="1824000" />
+      <workItem from="1573574652418" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="so sad">
       <created>1557763996716</created>
@@ -142,11 +145,31 @@
       <option name="project" value="LOCAL" />
       <updated>1559199000933</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="age statistic works!!!!">
+      <created>1572778878183</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572778878183</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="so sad" />
