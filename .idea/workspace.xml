@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12ff64b6-df4b-406f-9c03-d82ca0983db1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ageStatistic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ageStatistic.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,6 +107,7 @@
       <workItem from="1572932883185" duration="101000" />
       <workItem from="1573571122059" duration="1824000" />
       <workItem from="1573574652418" duration="21000" />
+      <workItem from="1573644130463" duration="141000" />
     </task>
     <task id="LOCAL-00001" summary="so sad">
       <created>1557763996716</created>
@@ -152,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572778878183</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add static">
+      <created>1573644179079</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573644179079</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +180,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="so sad" />
     <MESSAGE value="age statistic works!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="age statistic works!!!!" />
+    <MESSAGE value="add static" />
+    <option name="LAST_COMMIT_MESSAGE" value="add static" />
   </component>
   <component name="masterDetails">
     <states>
