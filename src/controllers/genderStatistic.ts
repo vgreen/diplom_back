@@ -1,5 +1,6 @@
 import {Router, Request, Response} from "express";
 import {getConnection} from "typeorm";
+import {generateGenderQuery} from "../queries/genderQuery";
 
 
 export const genderStatisticRouter = Router();
@@ -25,55 +26,7 @@ export const getGenderStatistic = async (dateStart: string, dateEnd: string, dep
         dateE:string = dateEnd.toString();
     try {
         return await getConnection("mgerm_connect")
-            .query(
-                "select (CASE " +
-                "when t.sx = 0 then 'Мужской'"+
-                "else 'Женский' "+
-                "end) "+
-                 "as 'пол' ,"+
-             "count(CASE "+
-                 "when t.department = '1' then 1 "+
-                 'else 0 '+
-                 "end) as '1 отделение',"+
-             "count(CASE "+
-                 "when t.department = '2' then 1 "+
-                 "else 0 "+
-                 "end) as '2 отделение',"+
-             "count(CASE "+
-                 "when t.department = '3' then 1 "+
-                 'else 0 '+
-                 "end) as '3 отделение',"+
-             "count(CASE "+
-                 "when t.department = '4' then 1 "+
-                 "else 0 "+
-                 "end) as '4 отделение',"+
-             "count(CASE "+
-                 "when t.department = '5' then 1 "+
-                 'else 0 '+
-                 "end) as '5 отделение',"+
-             "count(CASE "+
-                 "when t.department = '6' then 1 "+
-                 "else 0 "+
-                 "end) as '6 отделение',"+
-             "count(CASE "+
-                 "when t.department = '7' then 1 "+
-                 'else 0 '+
-                 "end) as '7 отделение',"+
-             "count(CASE "+
-                 "when t.department = '8' then 1 "+
-                 "else 0 "+
-                 "end) as '8 отделение',"+
-             "count(CASE "+
-                    "when t.department = '9' then 1 "+
-                    'else 0 '+
-                    "end) as '9 отделение',"+
-             "count(CASE "+
-                    "when t.department = '10' then 1 "+
-                    "else 0 "+
-                    "end) as '10 отделение' "+
-                "from mgerm.department_income as t "+
-                "where t.date >= '"+ dateS +"' and t.date < '" + dateE + "' " +
-                "group by t.sx\n");
+            .query(generateGenderQuery(dateS, dateE));
 
     } catch (error) {
         console.log(error.message);
