@@ -2,7 +2,7 @@
   {
     "name": "mgerm_users_connect",
     "type": "mysql",
-    "host": "localhost",
+    "host": "192.168.0.3",
     "port": 3306,
     "username": "root",
     "password": "0x0qo1010",
@@ -15,7 +15,7 @@
   {
     "name": "vmh_db_connect",
     "type": "mysql",
-    "host": "localhost",
+    "host": "192.168.0.3",
     "port": 3306,
     "username": "root",
     "password": "0x0qo1010",
@@ -28,7 +28,7 @@
   {
     "name": "mgerm_connect",
     "type": "mysql",
-    "host": "localhost",
+    "host": "192.168.0.3",
     "port": 3306,
     "username": "root",
     "password": "0x0qo1010",
@@ -41,7 +41,7 @@
   {
     "name": "mgerm_archive_connect",
     "type": "mysql",
-    "host": "localhost",
+    "host": "192.168.0.3",
     "port": 3306,
     "username": "root",
     "password": "0x0qo1010",
