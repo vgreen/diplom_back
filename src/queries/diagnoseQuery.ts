@@ -14,7 +14,7 @@ export const generateDiagnoseQuery = (dateS, dateE, dep?):string => {
        count(if(din.department = '%2 дн%', 1, null)) as 'dnst2department'
    from mgerm.department_income as din
    inner join mgerm.stat_cards_table as st on st.hystoryNumber = din.hystoryNumber
-   where st.Diagnoz = 'F' and din.date > "${dateS}" and din.date < "${dateE}" 
+   where st.Diagnoz = 'F' and din.date >= "${dateS}" and din.date <= "${dateE}" 
    ${dep ?  ' and din.department="' + dep + '"': '' } 
    group by Code;`)
 };
