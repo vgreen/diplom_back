@@ -8,5 +8,5 @@ inner join mgerm.patients_list as pl on out_.patientID = pl.patientID
 where in_.date > '${dateStart}' and in_.date < '${dateEnd}'
 ${department ?  ' and in_.department="' + department + '"': '' } 
 order by postupil) as sel
-limit 20000
+limit 1000
 `;
