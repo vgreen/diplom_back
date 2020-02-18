@@ -17,7 +17,9 @@ inner join mgerm.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and e
 inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.SHkala_Beka_pri_postuplenii < 226 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
-group by Value`;
+group by Value
+order by Value
+`;
 
 export const generateShBekaOutQuery = (dateStart:string = '2014-01-01', dateEnd: string = '2019-01-01', department?: string) =>
     `SELECT o.SB_na_moment_vipiski as 'Value',
@@ -38,7 +40,9 @@ inner join mgerm.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and e
 inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.SB_na_moment_vipiski < 200 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
-group by Value`;
+group by Value
+order by Value
+`;
 
 export const generateShGamiltonaInQuery = (dateStart:string = '01-01-2018', dateEnd: string = '01-01-2019', department?: string) =>
     `SELECT o.SHkala_Gamiltona_pri_postuplenii as 'Value',
@@ -59,7 +63,9 @@ inner join mgerm.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and e
 inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.SHkala_Gamiltona_pri_postuplenii < 200 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
-group by Value`;
+group by Value
+order by Value
+`;
 
 export const generateShGamiltonaOutQuery = (dateStart:string = '2014-01-01', dateEnd: string = '2019-01-01', department?: string) =>
     `SELECT o.SHG_na_moment_vipiski as 'Value',
@@ -80,7 +86,8 @@ inner join mgerm.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and e
 inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.SHG_na_moment_vipiski < 200 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
-group by Value`;
+group by Value
+order by Value`;
 
 export const generateShLTInQuery = (dateStart:string = '2014-01-01', dateEnd: string = '2019-01-01', department?: string) =>
     `SELECT o.Lichnostnaya_trevoga_pri_postuplenii as 'Value',
@@ -122,7 +129,8 @@ inner join mgerm.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and e
 inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.LT_na_moment_vipiski < 200 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
-group by Value`;
+group by Value
+order by Value`;
 
 export const generateShSTInQuery = (dateStart:string = '2014-01-01', dateEnd: string = '2019-01-01', department?: string) =>
     `SELECT o.Situatsionnaya_trevoga_pri_postuplenii as 'Value',
@@ -143,7 +151,8 @@ inner join mgerm.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and e
 inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.Situatsionnaya_trevoga_pri_postuplenii < 200 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
-group by Value`;
+group by Value
+order by Value`;
 
 export const generateShSTOutQuery = (dateStart:string = '2014-01-01', dateEnd: string = '2019-01-01', department?: string) =>
     `SELECT o.ST_Na_moment_vipiski as 'Value',
@@ -164,4 +173,5 @@ inner join mgerm.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and e
 inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.ST_Na_moment_vipiski < 200 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
-group by Value`;
+group by Value
+order by Value`;

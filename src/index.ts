@@ -7,6 +7,7 @@ import {genderStatisticRouter} from "./controllers/genderStatistic";
 import {semPologStatisticRouter} from "./controllers/semPologStatistic";
 import {shkaliStatisticRouter} from "./controllers/shkaliStatistic";
 import {diagnoseStatisticRouter} from "./controllers/diagnoseStatistic";
+import {patTablePsyRouter} from "./controllers/patTablePsy";
 
 createConnections().then(async connections => {
 
@@ -21,6 +22,7 @@ createConnections().then(async connections => {
     server.use('/sexStatistic', genderStatisticRouter);
     server.use('/shkaliStatistic', shkaliStatisticRouter);
     server.use('/diagnoseStatistic', diagnoseStatisticRouter);
+    server.use('/patientsTable', patTablePsyRouter);
 
     server.use(express.static('build'));
     server.listen(3001, () => console.log(`Backend running on 3001`));
