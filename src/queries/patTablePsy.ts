@@ -1,6 +1,6 @@
 export const generateTablePsy = (dateStart:string = '01-01-2018', dateEnd: string = '01-01-2019', department?: string) =>
     `
-SELECT distinct pl.last_name, pl.first_name, pl.second_name, in_.hystoryNumber as 'istoria_bolezn' , date_format(in_.date,' %d - %m - %Y') as 'postupil', date_format(out_.out_date,' %d - %m - %Y') as 'vibil', t.* FROM vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as t
+SELECT distinct pl.last_name, pl.first_name, pl.second_name, in_.hystoryNumber as 'istoria_bolezn' , date_format(in_.date,' %d-%m-%Y') as 'postupil', date_format(out_.out_date,' %d-%m-%Y') as 'vibil', t.* FROM vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as t
 left join ( 
     select formalisedDataID,  patientID, hystoryNumber from mgerm.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0
 \t  union all
