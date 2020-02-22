@@ -13,8 +13,10 @@ export const generateShBekaInQuery = (dateStart:string = '2014-01-01', dateEnd: 
 \tcount(if(din.department = '%1 дн%', 1, null)) as 'dnst1', 
 \tcount(if(din.department = '%2 дн%', 1, null)) as 'dnst2'
 FROM mgerm.department_income as din
-inner join mgerm_archive.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and ep.incorrect != 1 and ep.deleted != 1 and ep.digest is not null and ep.recordTypeID = 680
-inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
+inner join ( 
+    select formalisedDataID,  patientID, hystoryNumber from mgerm.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0
+\t  union all
+\t  select formalisedDataID,  patientID, hystoryNumber from mgerm_archive.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0) ep on ep.hystoryNumber = din.hystoryNumber inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.SHkala_Beka_pri_postuplenii < 226 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
 group by Value
@@ -36,8 +38,10 @@ export const generateShBekaOutQuery = (dateStart:string = '2014-01-01', dateEnd:
 \tcount(if(din.department = '%1 дн%', 1, null)) as 'dnst1', 
 \tcount(if(din.department = '%2 дн%', 1, null)) as 'dnst2'
 FROM mgerm.department_income as din
-inner join mgerm_archive.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and ep.incorrect != 1 and ep.deleted != 1 and ep.digest is not null and ep.recordTypeID = 680
-inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
+inner join ( 
+    select formalisedDataID,  patientID, hystoryNumber from mgerm.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0
+\t  union all
+\t  select formalisedDataID,  patientID, hystoryNumber from mgerm_archive.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0) ep on ep.hystoryNumber = din.hystoryNumber inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.SB_na_moment_vipiski < 200 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
 group by Value
@@ -59,8 +63,10 @@ export const generateShGamiltonaInQuery = (dateStart:string = '01-01-2018', date
 \tcount(if(din.department = '%1 дн%', 1, null)) as 'dnst1', 
 \tcount(if(din.department = '%2 дн%', 1, null)) as 'dnst2'
 FROM mgerm.department_income as din
-inner join mgerm_archive.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and ep.incorrect != 1 and ep.deleted != 1 and ep.digest is not null and ep.recordTypeID = 680
-inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
+inner join ( 
+    select formalisedDataID,  patientID, hystoryNumber from mgerm.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0
+\t  union all
+\t  select formalisedDataID,  patientID, hystoryNumber from mgerm_archive.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0) ep on ep.hystoryNumber = din.hystoryNumber inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.SHkala_Gamiltona_pri_postuplenii < 200 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
 group by Value
@@ -82,8 +88,10 @@ export const generateShGamiltonaOutQuery = (dateStart:string = '2014-01-01', dat
 \tcount(if(din.department = '%1 дн%', 1, null)) as 'dnst1', 
 \tcount(if(din.department = '%2 дн%', 1, null)) as 'dnst2'
 FROM mgerm.department_income as din
-inner join mgerm_archive.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and ep.incorrect != 1 and ep.deleted != 1 and ep.digest is not null and ep.recordTypeID = 680
-inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
+inner join ( 
+    select formalisedDataID,  patientID, hystoryNumber from mgerm.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0
+\t  union all
+\t  select formalisedDataID,  patientID, hystoryNumber from mgerm_archive.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0) ep on ep.hystoryNumber = din.hystoryNumber inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.SHG_na_moment_vipiski < 200 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
 group by Value
@@ -104,8 +112,10 @@ export const generateShLTInQuery = (dateStart:string = '2014-01-01', dateEnd: st
 \tcount(if(din.department = '%1 дн%', 1, null)) as 'dnst1', 
 \tcount(if(din.department = '%2 дн%', 1, null)) as 'dnst2department'
 FROM mgerm.department_income as din
-inner join mgerm_archive.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and ep.incorrect != 1 and ep.deleted != 1 and ep.digest is not null and ep.recordTypeID = 680
-inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
+inner join ( 
+    select formalisedDataID,  patientID, hystoryNumber from mgerm.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0
+\t  union all
+\t  select formalisedDataID,  patientID, hystoryNumber from mgerm_archive.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0) ep on ep.hystoryNumber = din.hystoryNumber inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.Lichnostnaya_trevoga_pri_postuplenii < 200 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
 group by Value`;
@@ -125,8 +135,10 @@ export const generateShLTOutQuery = (dateStart:string = '2014-01-01', dateEnd: s
 \tcount(if(din.department = '%1 дн%', 1, null)) as 'dnst1', 
 \tcount(if(din.department = '%2 дн%', 1, null)) as 'dnst2'
 FROM mgerm.department_income as din
-inner join mgerm_archive.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and ep.incorrect != 1 and ep.deleted != 1 and ep.digest is not null and ep.recordTypeID = 680
-inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
+inner join ( 
+    select formalisedDataID,  patientID, hystoryNumber from mgerm.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0
+\t  union all
+\t  select formalisedDataID,  patientID, hystoryNumber from mgerm_archive.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0) ep on ep.hystoryNumber = din.hystoryNumber inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.LT_na_moment_vipiski < 200 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
 group by Value
@@ -147,7 +159,10 @@ export const generateShSTInQuery = (dateStart:string = '2014-01-01', dateEnd: st
 \tcount(if(din.department = '%1 дн%', 1, null)) as 'dnst1', 
 \tcount(if(din.department = '%2 дн%', 1, null)) as 'dnst2'
 FROM mgerm.department_income as din
-inner join mgerm_archive.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and ep.incorrect != 1 and ep.deleted != 1 and ep.digest is not null and ep.recordTypeID = 680
+inner join ( 
+    select formalisedDataID,  patientID, hystoryNumber from mgerm.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0
+\t  union all
+\t  select formalisedDataID,  patientID, hystoryNumber from mgerm_archive.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0) ep on ep.hystoryNumber = din.hystoryNumber 
 inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.Situatsionnaya_trevoga_pri_postuplenii < 200 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
@@ -169,8 +184,10 @@ export const generateShSTOutQuery = (dateStart:string = '2014-01-01', dateEnd: s
 \tcount(if(din.department = '%1 дн%', 1, null)) as 'dnst1', 
 \tcount(if(din.department = '%2 дн%', 1, null)) as 'dnst2'
 FROM mgerm.department_income as din
-inner join mgerm_archive.epm_records as ep on ep.hystoryNumber = din.hystoryNumber and ep.incorrect != 1 and ep.deleted != 1 and ep.digest is not null and ep.recordTypeID = 680
-inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
+inner join ( 
+    select formalisedDataID,  patientID, hystoryNumber from mgerm.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0
+\t  union all
+\t  select formalisedDataID,  patientID, hystoryNumber from mgerm_archive.epm_records where recordTypeID in (690, 680) and deleted = 0 and digest is NOT NULL and incorrect=0) ep on ep.hystoryNumber = din.hystoryNumber inner join vmh_db.otsenka_psihologicheskogo_sostoyaniya_bolnogo as o on o.rid = ep.formalisedDataID
 where o.ST_Na_moment_vipiski < 200 and din.date > '${dateStart}' and din.date < '${dateEnd}'
 ${department ?  ' and din.department="' + department + '"': '' } 
 group by Value
